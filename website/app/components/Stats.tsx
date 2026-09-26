@@ -25,13 +25,22 @@ function useCountUp(target: number, start: boolean, duration = 1200) {
   return val;
 }
 
-function Stat({ num, suffix, label, start }: { num: number; suffix: string; label: string; start: boolean }) {
+function Stat({
+  num,
+  label,
+  start,
+  accent,
+}: {
+  num: number;
+  label: string;
+  start: boolean;
+  accent?: boolean;
+}) {
   const v = useCountUp(num, start);
   return (
     <div className="stat">
       <div className="stat-num">
-        {v.toLocaleString()}
-        {suffix}
+        {accent ? <em>{v.toLocaleString()}</em> : v.toLocaleString()}
       </div>
       <div className="stat-label">{label}</div>
     </div>
@@ -62,10 +71,13 @@ export default function Stats() {
     <div className="container" style={{ paddingBottom: '1rem' }}>
       <Reveal>
         <div className="stats" ref={ref}>
-          <Stat num={899} suffix="" label="original skills" start={start} />
-          <Stat num={31} suffix="" label="categories" start={start} />
-          <Stat num={100} suffix="%" label="written from scratch" start={start} />
-          <Stat num={0} suffix="" label="cost — MIT licensed" start={start} />
+          <Stat num={899} label="original skills" start={start} accent />
+          <Stat num={31} label="categories" start={start} />
+          <Stat num={100} label="% written from scratch" start={start} />
+          <div className="stat">
+            <div className="stat-num">MIT</div>
+            <div className="stat-label">free &amp; open source</div>
+          </div>
         </div>
       </Reveal>
     </div>
