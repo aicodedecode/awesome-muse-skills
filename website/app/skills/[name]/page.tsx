@@ -1,11 +1,27 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getSkills, getSkill } from '../../../lib/skills';
-
-const REPO_URL = 'https://github.com/aicodedecode/awesome-muse-skills';
+import SkillSource from '../../components/SkillSource';
+import SkillCard from '../../components/SkillCard';
+import Reveal from '../../components/Reveal';
 
 export function generateStaticParams() {
   return getSkills().map((s) => ({ name: s.name }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ name: string }>;
+}): Promise<Metadata> {
+  const { name } = await params;
+  const skill = getSkill(name);
+  if (!skill) return { title: 'Skill not found' };
+  return {
+    title: skill.name,
+    description: skill.description,
+  };
 }
 
 export default async function SkillPage({
@@ -17,49 +33,96 @@ export default async function SkillPage({
   const skill = getSkill(name);
   if (!skill) notFound();
 
-  const useSkill = {
-    intro:
-      "Meta's Muse doesn't have an official skill-install flow yet — using a skill takes seconds right in chat:",
-    steps: [
-      `Open this skill's source below and copy the full SKILL.md text.`,
-      `Paste it into a chat with Muse and add: "Please use this skill whenever I ask about ${skill.name.replace(/-/g, ' ')}. Remember it for our future conversations."`,
-      `That's it — Muse follows the skill for relevant tasks, and you approve anything it does.`,
-    ],
-  };
+  const related = getSkills()
+    .filter((s) => s.category === skill.category && s.name !== skill.name)
+    .slice(0, 3);
 
   return (
-    <article className="detail">
-      <Link href="/" className="back">
-        &larr; All skills
-      </Link>
-      <span className="tag">{skill.category}</span>
-      <h1>{skill.name}</h1>
-      <p className="lede">{skill.description}</p>
+    <div className="container">
+      <article className="detail">
+        <Reveal>
+          <Link href="/skills" className="back">
+            <span aria-hidden="true">←</span> All skills
+          </Link>
+          <div>
+            <Link href={`/skills?category=${encodeURIComponent(skill.category)}`}>
+              <span className="skill-tag">{skill.category}</span>
+            </Link>
+          </div>
+          <h1>{skill.name}</h1>
+          <p className="lede">{skill.description}</p>
+        </Reveal>
 
-      <h2>How to use with Muse</h2>
-      <div className="install-box">
-        <p>{useSkill.intro}</p>
-        <ol>
-          {useSkill.steps.map((step, i) => (
-            <li key={i}>{step}</li>
-          ))}
-        </ol>
-        <p className="hint">
-          <a href={skill.github_url} target="_blank" rel="noreferrer">
-            Copy the SKILL.md source from GitHub
-          </a>{' '}
-          — then paste it into chat. When Meta ships native skill support, this
-          file is already in the right format.
-        </p>
-      </div>
+        <Reveal>
+          <h2>How to use with Muse</h2>
+          <div className="use-panel">
+            <ol className="use-steps">
+              <li data-n="1">
+                <span>
+                  <strong>Copy the skill text</strong> below — the full{' '}
+                  <code>SKILL.md</code>, one tap.
+                </span>
+              </li>
+              <li data-n="2">
+                <span>
+                  <strong>Paste it into a chat with Muse</strong> and add:{' '}
+                  <em>
+                    “Please use this skill whenever I ask about{' '}
+                    {skill.name.replace(/-/g, ' ')}. Remember it for our future
+                    conversations.”
+                  </em>
+                </span>
+              </li>
+              <li data-n="3">
+                <span>
+                  <strong>That&rsquo;s it.</strong> Muse follows the playbook
+                  for relevant tasks, and you approve anything it does.
+                </span>
+              </li>
+            </ol>
+            <SkillSource skillName={skill.name} />
+            <p
+              style={{
+                color: 'var(--faint)',
+                fontSize: '0.88rem',
+                margin: '1.2rem 0 0',
+              }}
+            >
+              Meta&rsquo;s Muse doesn&rsquo;t have an official skill-install
+              flow yet — this is the path that works today. If native support
+              ships, this file is already in the right format.
+            </p>
+          </div>
+        </Reveal>
 
-      <p>
-        <a href={skill.github_url} target="_blank" rel="noreferrer">
-          View source on GitHub
-        </a>
-        {' · '}
-        License: {skill.license} · Author: {skill.author}
-      </p>
-    </article>
+        <Reveal>
+          <div className="meta-row">
+            <span>
+              Source:{' '}
+              <a href={skill.github_url} target="_blank" rel="noreferrer">
+                GitHub ↗
+              </a>
+            </span>
+            <span>License: {skill.license}</span>
+            <span>Author: {skill.author}</span>
+          </div>
+        </Reveal>
+
+        {related.length > 0 && (
+          <div className="related">
+            <Reveal>
+              <h2>More in {skill.category}</h2>
+            </Reveal>
+            <div className="skill-grid">
+              {related.map((s, i) => (
+                <Reveal key={s.name} delay={i * 80}>
+                  <SkillCard skill={s} />
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        )}
+      </article>
+    </div>
   );
 }

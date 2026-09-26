@@ -14,7 +14,7 @@ A skill is a portable markdown file (`SKILL.md`) that teaches an AI assistant a 
 
 No installers, no packages. Meta's Muse doesn't have an official skill-install flow yet, so using a skill takes seconds right in chat:
 
-1. **Open the skill** — on the [website catalog](website/) or on GitHub at `skills/<name>/SKILL.md`.
+1. **Open the skill** — on the [website catalog](https://aimuse-rho.vercel.app/) or on GitHub at `skills/<name>/SKILL.md`.
 2. **Paste the `SKILL.md` content into a chat with Muse**, and add: *"Please use this skill whenever I ask about \<topic\>. Remember it for our future conversations."*
 3. **That's it.** A skill is just text instructions — Muse follows them for relevant tasks, and you approve anything it does.
 
@@ -22,7 +22,7 @@ New to skills? Start with [`getting-started-with-muse-skills`](skills/getting-st
 
 ## Catalog
 
-**899 original skills across 31 categories.** Browse and search them all on the [website catalog](website/) — the table below is a category-level summary.
+**899 original skills across 31 categories.** Browse and search them all on the [website catalog](https://aimuse-rho.vercel.app/) — the table below is a category-level summary.
 
 | Category | Skills | Scope |
 |---|---|---|
@@ -76,7 +76,7 @@ Original skills live in this repo (MIT). The wider skills ecosystem is worth kno
 ## Roadmap
 
 - [x] Complete original catalog — 899 skills across 31 categories (done 2026-09-26)
-- The [website catalog](website/) — browse, search, and preview skills online (scaffold ready; needs `npm install && npm run build` + Vercel deploy)
+- The [website catalog](https://aimuse-rho.vercel.app/) — browse, search, and preview skills online (live)
 - Community submissions — see [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Contributing

@@ -22,3 +22,9 @@ export function getCategories(): string[] {
   const cats = new Set(getSkills().map((s) => s.category));
   return Array.from(cats).sort();
 }
+
+export function getCategoryCounts(): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const s of getSkills()) counts[s.category] = (counts[s.category] || 0) + 1;
+  return counts;
+}
