@@ -39,3 +39,5 @@ Search the repo for `aicodedecode` and replace with your GitHub username/org:
 - `scripts/sync-skills-json.py` (`GITHUB_PLACEHOLDER`)
 
 Then re-run `python3 scripts/sync-skills-json.py` so `skills.json` carries the real links.
+
+<!-- redeploy: import-path fix verified locally -->
