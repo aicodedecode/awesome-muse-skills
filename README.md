@@ -3,8 +3,18 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Skills](https://img.shields.io/badge/skills-899-blue.svg)](skills/)
+[![Website](https://img.shields.io/badge/website-live-success.svg)](https://aimuse-rho.vercel.app/)
+[![GitHub stars](https://img.shields.io/github/stars/aicodedecode/awesome-muse-skills?style=social)](https://github.com/aicodedecode/awesome-muse-skills/stargazers)
 
 A community catalog of **agent skills for Meta's Muse** personal assistant — curated, safety-reviewed, and free to use.
+
+🌐 **Browse it live: [aimuse-rho.vercel.app](https://aimuse-rho.vercel.app/)** — search all 899 skills, read any `SKILL.md` in full, and copy it with one tap.
+
+> ⭐ **If this project helps you, please star it** — stars are the simplest way to support the project and help others discover it.
+
+![Awesome Muse Skills website — browse, search, and copy any skill](assets/screenshot.png)
+
+*Keywords: awesome list, awesome-list, claude skills, agent skills, ai skills, ai agents, llm skills, meta muse, meta ai, personal ai assistant, prompt engineering, productivity, skill.md, agent skills format*
 
 ## What are Muse skills?
 
@@ -82,6 +92,15 @@ Original skills live in this repo (MIT). The wider skills ecosystem is worth kno
 ## Contributing
 
 We welcome new skills and improvements! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first — every submission must pass `scripts/validate.py` and the safety rules.
+
+Ways to contribute:
+
+- ✨ **Add a skill** — write an original `SKILL.md` following the format guide and open a PR.
+- 🐛 **Fix or improve** an existing skill — corrections, clearer steps, better examples.
+- 💡 **Suggest ideas** — open an issue describing a skill you'd like to see.
+- ⭐ **Star the repo** — the simplest contribution of all; it helps others find the project.
+
+Questions? Open an issue — every one gets an answer.
 
 ## Disclaimer
 
