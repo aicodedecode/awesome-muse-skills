@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
-import type { Skill } from '../lib/skills';
+import type { Skill } from '../../lib/skills';
 
 export default function Catalog({
   skills,

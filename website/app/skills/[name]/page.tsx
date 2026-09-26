@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getSkills, getSkill } from '../../lib/skills';
+import { getSkills, getSkill } from '../../../lib/skills';
 
 const REPO_URL = 'https://github.com/aicodedecode/awesome-muse-skills';
 
