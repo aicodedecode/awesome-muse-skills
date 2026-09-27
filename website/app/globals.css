@@ -567,6 +567,11 @@ code {
   border-radius: 999px;
   margin-bottom: 0.85rem;
 }
+.skill-tag-import {
+  color: var(--accent-ink);
+  background: rgba(194, 65, 12, 0.08);
+  border-color: rgba(194, 65, 12, 0.35);
+}
 .skill-card h3 {
   font-size: 1.05rem;
   font-weight: 650;
@@ -650,6 +655,45 @@ code {
   border-color: var(--ink);
 }
 .result-meta { color: var(--faint); font-size: 0.9rem; font-family: var(--font-mono); }
+
+/* ---------- collection toggle ---------- */
+.collection-toggle {
+  display: inline-flex;
+  gap: 0.35rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.32rem;
+  margin-bottom: 1.75rem;
+  box-shadow: var(--shadow);
+}
+.collection-toggle button {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 1.15rem;
+  cursor: pointer;
+  transition: all 0.16s var(--ease-out);
+  white-space: nowrap;
+}
+.collection-toggle button:hover { color: var(--ink); }
+.collection-toggle button .count {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  opacity: 0.65;
+  margin-left: 0.4rem;
+}
+.collection-toggle button.active {
+  background: var(--ink);
+  color: #fff;
+}
+
+/* ---------- two-column step grid ---------- */
+.steps-2 { grid-template-columns: repeat(2, 1fr); }
 
 /* ---------- detail page ---------- */
 .detail { padding: 3.5rem 0 5rem; }
@@ -941,6 +985,7 @@ footer {
   .stat { border-top: 1px solid var(--line); }
   .stat:nth-child(-n+2) { border-top: 0; }
   .steps { grid-template-columns: 1fr; }
+  .steps-2 { grid-template-columns: 1fr; }
   .sotd { grid-template-columns: 1fr; }
   .sotd-side { min-height: 0; }
   .nav-links a:not(.btn) { display: none; }

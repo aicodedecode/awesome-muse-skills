@@ -12,15 +12,15 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL('https://aimuse-rho.vercel.app/'),
   title: {
-    default: 'Awesome Muse Skills — 899 agent skills for Meta’s Muse',
+    default: 'Awesome Muse Skills — 2,365 agent skills for Meta’s Muse',
     template: '%s · Awesome Muse Skills',
   },
   description:
-    'A community catalog of 899 original agent skills for Meta’s Muse personal assistant — browse, search, and use them in seconds. Free and open source (MIT).',
+    'A community catalog of 2,365 agent skills for Meta’s Muse personal assistant — 899 originals written from scratch plus 1,466 curated open-source imports. Browse, search, and use them in seconds. Free and open source (MIT).',
   openGraph: {
     title: 'Awesome Muse Skills',
     description:
-      '899 original agent skills for Meta’s Muse — browse, search, read the full skill on the site, copy it, and paste it into chat.',
+      '2,365 agent skills for Meta’s Muse — browse, search, read the full skill on the site, copy it, and paste it into chat.',
     type: 'website',
   },
 };
@@ -77,8 +77,9 @@ export default function RootLayout({
                 </a>
                 <p>
                   A community catalog of agent skills for Meta&rsquo;s Muse
-                  personal assistant. Every skill is written from scratch for
-                  this project. Free and open source under the MIT license.
+                  personal assistant. 899 skills written from scratch, plus
+                  1,466 curated open-source imports republished with
+                  attribution. Free and open source under the MIT license.
                 </p>
               </div>
               <nav className="foot-links" aria-label="Footer">

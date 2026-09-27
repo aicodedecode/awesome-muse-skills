@@ -27,7 +27,15 @@ function Ticker({ names }: { names: string[] }) {
   );
 }
 
-export default function Hero({ tickerNames }: { tickerNames: string[] }) {
+export default function Hero({
+  tickerNames,
+  originalCount,
+  importCount,
+}: {
+  tickerNames: string[];
+  originalCount: number;
+  importCount: number;
+}) {
   const [q, setQ] = useState('');
   const router = useRouter();
 
@@ -43,7 +51,9 @@ export default function Hero({ tickerNames }: { tickerNames: string[] }) {
           <Reveal>
             <span className="hero-kicker">
               <span className="dot" aria-hidden="true" />
-              899 original skills · 31 categories · MIT
+              {(originalCount + importCount).toLocaleString()} skills ·{' '}
+              {originalCount} originals · {importCount.toLocaleString()} curated
+              imports
             </span>
           </Reveal>
           <Reveal delay={90}>

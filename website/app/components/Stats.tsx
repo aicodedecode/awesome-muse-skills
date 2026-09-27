@@ -71,13 +71,10 @@ export default function Stats() {
     <div className="container" style={{ paddingBottom: '1rem' }}>
       <Reveal>
         <div className="stats" ref={ref}>
-          <Stat num={899} label="original skills" start={start} accent />
-          <Stat num={31} label="categories" start={start} />
-          <Stat num={100} label="% written from scratch" start={start} />
-          <div className="stat">
-            <div className="stat-num">MIT</div>
-            <div className="stat-label">free &amp; open source</div>
-          </div>
+          <Stat num={2365} label="total skills" start={start} accent />
+          <Stat num={899} label="original skills" start={start} />
+          <Stat num={1466} label="curated imports" start={start} />
+          <Stat num={31} label="original categories" start={start} />
         </div>
       </Reveal>
     </div>

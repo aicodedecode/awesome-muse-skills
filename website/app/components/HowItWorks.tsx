@@ -3,7 +3,7 @@ import Reveal from './Reveal';
 const STEPS = [
   {
     title: 'Pick a skill',
-    body: 'Browse 899 skills across 31 categories — from Kubernetes debugging to sourdough baking to UPSC prep. Each one is a single SKILL.md file.',
+    body: 'Browse 2,365 skills across two collections — 899 originals written from scratch, plus 1,466 curated open-source imports. Each one is a single SKILL.md file.',
   },
   {
     title: 'Copy the source',

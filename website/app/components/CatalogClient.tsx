@@ -3,26 +3,43 @@
 import { useEffect, useMemo, useState } from 'react';
 import Reveal from './Reveal';
 import SkillCard from './SkillCard';
-import type { Skill } from '../../lib/skills';
+import type { ImportedSkill, Skill } from '../../lib/skills';
+
+type Collection = 'originals' | 'imports';
 
 export default function CatalogClient({
-  skills,
-  categories,
+  originalSkills,
+  originalCategories,
+  importedSkills,
+  importedCategories,
 }: {
-  skills: Skill[];
-  categories: string[];
+  originalSkills: Skill[];
+  originalCategories: string[];
+  importedSkills: ImportedSkill[];
+  importedCategories: string[];
 }) {
-  // Start unfiltered so the static HTML ships a real, SEO-friendly grid;
-  // URL params (?q= / ?category=) are applied right after hydration.
+  // Start on originals so the static HTML ships a real, SEO-friendly grid;
+  // URL params (?q= / ?category= / ?set=) are applied right after hydration.
+  const [set, setSet] = useState<Collection>('originals');
   const [q, setQ] = useState('');
   const [cat, setCat] = useState('');
+
+  const skills = set === 'originals' ? originalSkills : importedSkills;
+  const categories =
+    set === 'originals' ? originalCategories : importedCategories;
+  const basePath = set === 'originals' ? '/skills' : '/skills/imported';
 
   useEffect(() => {
     const sp = new URLSearchParams(window.location.search);
     setQ(sp.get('q') ?? '');
+    const next: Collection = sp.get('set') === 'imports' ? 'imports' : 'originals';
+    setSet(next);
+    // ?category= historically applies to the originals collection; when
+    // ?set=imports is given, it applies to the imports collection instead.
+    const cats = next === 'originals' ? originalCategories : importedCategories;
     const c = sp.get('category') ?? '';
-    if (categories.includes(c)) setCat(c);
-  }, [categories]);
+    if (cats.includes(c)) setCat(c);
+  }, [originalCategories, importedCategories]);
 
   const filtered = useMemo(() => {
     const needle = q.trim().toLowerCase();
@@ -36,8 +53,43 @@ export default function CatalogClient({
     });
   }, [skills, q, cat]);
 
+  const switchSet = (next: Collection) => {
+    if (next === set) return;
+    setSet(next);
+    setCat('');
+    const url = new URL(window.location.href);
+    if (next === 'imports') url.searchParams.set('set', 'imports');
+    else url.searchParams.delete('set');
+    window.history.replaceState(null, '', url);
+  };
+
+  const noun = set === 'originals' ? 'original skills' : 'curated imports';
+
   return (
     <>
+      <div
+        className="collection-toggle"
+        role="group"
+        aria-label="Choose skill collection"
+      >
+        <button
+          type="button"
+          className={set === 'originals' ? 'active' : ''}
+          onClick={() => switchSet('originals')}
+        >
+          Originals
+          <span className="count">{originalSkills.length}</span>
+        </button>
+        <button
+          type="button"
+          className={set === 'imports' ? 'active' : ''}
+          onClick={() => switchSet('imports')}
+        >
+          Curated imports
+          <span className="count">{importedSkills.length.toLocaleString()}</span>
+        </button>
+      </div>
+
       <div className="toolbar">
         <div className="searchbar">
           <svg
@@ -56,7 +108,7 @@ export default function CatalogClient({
           <input
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Search 899 skills…"
+            placeholder={`Search ${skills.length.toLocaleString()} ${noun}…`}
             aria-label="Search skills"
           />
         </div>
@@ -78,7 +130,7 @@ export default function CatalogClient({
           ))}
         </div>
         <div className="result-meta">
-          {filtered.length} of {skills.length} skills
+          {filtered.length} of {skills.length.toLocaleString()} {noun}
           {cat ? ` in ${cat}` : ''}
           {q.trim() ? ` matching “${q.trim()}”` : ''}
         </div>
@@ -93,14 +145,18 @@ export default function CatalogClient({
         <div className="skill-grid">
           {filtered.slice(0, 120).map((s, i) => (
             <Reveal key={s.name} delay={Math.min(i % 12, 6) * 40}>
-              <SkillCard skill={s} />
+              <SkillCard skill={s} basePath={basePath} />
             </Reveal>
           ))}
         </div>
       )}
       {filtered.length > 120 && (
-        <p className="result-meta" style={{ marginTop: '1.6rem', textAlign: 'center' }}>
-          Showing the first 120 of {filtered.length} — refine your search to see more.
+        <p
+          className="result-meta"
+          style={{ marginTop: '1.6rem', textAlign: 'center' }}
+        >
+          Showing the first 120 of {filtered.length} — refine your search to
+          see more.
         </p>
       )}
     </>

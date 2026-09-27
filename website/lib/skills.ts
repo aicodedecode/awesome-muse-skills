@@ -1,15 +1,26 @@
 import fs from 'fs';
 import path from 'path';
 import skillsData from '../data/skills.json';
+import importedSkillsData from '../data/skills-imported.json';
 
-export interface Skill {
+export interface SkillBase {
   name: string;
   description: string;
   category: string;
   path: string;
   github_url: string;
   author: string;
+}
+
+export interface Skill extends SkillBase {
   license: string;
+}
+
+export interface ImportedSkill extends SkillBase {
+  origin: 'curated-import';
+  source: string | null;
+  source_url: string | null;
+  license: string | null;
 }
 
 export function getSkills(): Skill[] {
@@ -31,11 +42,40 @@ export function getCategoryCounts(): Record<string, number> {
   return counts;
 }
 
-/** Raw SKILL.md source for a skill, read at build time from the repo. */
-export function getSkillSource(name: string): string | null {
+export function getImportedSkills(): ImportedSkill[] {
+  return importedSkillsData as ImportedSkill[];
+}
+
+export function getImportedSkill(name: string): ImportedSkill | undefined {
+  return getImportedSkills().find((s) => s.name === name);
+}
+
+export function getImportedCategories(): string[] {
+  const cats = new Set(getImportedSkills().map((s) => s.category));
+  return Array.from(cats).sort();
+}
+
+export function getImportedCategoryCounts(): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const s of getImportedSkills())
+    counts[s.category] = (counts[s.category] || 0) + 1;
+  return counts;
+}
+
+/**
+ * Raw SKILL.md source, read at build time from the skill entry's own path
+ * (works for both skills/ and skills-imported/). Accepts the skill entry
+ * directly, or a skill name (looked up among the originals).
+ */
+export function getSkillSource(skill: SkillBase | string): string | null {
   // server-only: called from server components during static generation
-  const safe = name.replace(/[^a-z0-9-]/gi, '');
-  const file = path.join(process.cwd(), '..', 'skills', safe, 'SKILL.md');
+  const entry = typeof skill === 'string' ? getSkill(skill) : skill;
+  if (!entry || !entry.path) return null;
+  const safePath = entry.path
+    .split('/')
+    .filter((p) => p && p !== '.' && p !== '..')
+    .join('/');
+  const file = path.join(process.cwd(), '..', safePath, 'SKILL.md');
   try {
     return fs.readFileSync(file, 'utf8');
   } catch {

@@ -1,0 +1,42 @@
+---
+description: UI strings use Payload i18n (t); CMS content uses localization — do not mix the two
+alwaysApply: true
+---
+
+# i18n vs localization (Payload)
+
+Follow Payload’s own split — do **not** invent a parallel copy system.
+
+| Concern | Payload API | Docs |
+|---------|-------------|------|
+| **UI / interface strings** | `i18n` + `t('namespace:key')` | [configuration/i18n](https://payloadcms.com/docs/configuration/i18n) |
+| **CMS / database content** | `localization` + `localized: true` + `locale` on queries | [configuration/localization](https://payloadcms.com/docs/configuration/localization) |
+
+## UI strings (i18n)
+
+1. Add keys under the host’s custom translation bundles (typically `custom` in the project’s i18n package or `i18n.translations`).
+2. Wire those bundles into `buildConfig({ i18n: { translations } })`.
+3. **Resolve strings where they render**, using Payload’s server vs client APIs
+   ([docs](https://payloadcms.com/docs/custom-components/overview#getting-the-current-language)):
+
+| Side | Obtain language | Resolve |
+|------|-----------------|---------|
+| **Server** | `await getRequestI18n()`, `req.i18n`, or the `i18n` prop | `t('custom:…')` / `i18n.t` for dictionary keys; `getTranslation(label, i18n)` from `@payloadcms/translations` for Payload labels |
+| **Client** | `useTranslation()` (or the host’s wrapper) | `t('custom:…')` — same keys |
+
+Prefer server resolution when the string is rendered in an RSC (or when pairing with a CMS `locale` query). Do not invent per-page `build*Copy` maps that re-list every key.
+
+When a shared UI package cannot import `@payloadcms/ui`, pass **`t`** (or the whole `i18n`) as a prop.
+
+## Database content (localization)
+
+- Host enables `localization` when needed.
+- Mark CMS fields `localized: true`.
+- Read/write with `locale` on Local/REST API.
+- Do **not** put CMS document strings into the UI i18n dictionary.
+
+## Do not
+
+- Hardcode member-facing English in UI components.
+- Invent `build*Copy` helpers that manually map every key.
+- Mix UI `t()` keys with DB `localized` field values as if they were the same mechanism.
