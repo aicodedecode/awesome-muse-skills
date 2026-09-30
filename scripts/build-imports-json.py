@@ -61,6 +61,64 @@ SKIP_REPOS = {"aicodedecode/awesome-muse-skills", "user/repo", "org/repo",
               "github/github"}
 
 
+# Category taxonomy for curated imports. Most imports carry no frontmatter
+# category (they'd all land in "general"), so we classify from name +
+# description with ordered keyword rules — first match wins, most specific
+# first. Explicit CAT_OVERRIDES handle provenance-known bundles.
+CAT_RULES = [
+    ("mobile", ["ios", "android", "expo", "flutter", "react native", "swift", "kotlin", "mobile app"]),
+    ("media", ["video", "ffmpeg", "manim", "remotion", "3d", "three.js", "blender", "image generat", "text-to-speech", "tts ", "podcast", "audio", "thumbnail"]),
+    ("security", ["secur", "pentest", "vulnerab", "exploit", "malware", "forensic", "threat", "owasp", "red team"]),
+    ("ai-agents", ["agent", "mcp ", "mcp-", "multi-agent", "rag ", "rag-", "prompt engineer", "llm ", "langchain", "autogpt", "crewai", "tool use", "function calling"]),
+    ("data", ["pandas", "data ", "dataset", "analytics", "visualiz", "chart", "dashboard", "etl ", "sql ", "database", "machine learning", "forecast", "scikit", "plot"]),
+    ("devops", ["docker", "kubernet", "deploy", "ci/cd", "cicd", "terraform", "aws ", "cloudflare", "serverless", "nginx", "linux server", "infrastructure"]),
+    ("testing", ["test", "qa ", "playwright", "cypress", "tdd ", "e2e ", "unit test", "integration test"]),
+    ("web-dev", ["react", "next.js", "nextjs", "vue", "angular", "svelte", "api ", "rest ", "graphql", "backend", "fullstack", "full-stack", "typescript", "node.js", "web app", "website", "frontend"]),
+    ("design", ["design", "a11y", "accessib", "ui ", "ux ", "figma", "css", "tailwind", "component", "animation", "motion", "aesthetic", "typograph", "color ", "layout", "shadcn"]),
+    ("writing", ["writ", "copywrit", "blog", "documentation", "docs ", "editorial", "newsletter", "essay", "proofread"]),
+    ("marketing", ["seo", "market", "social media", "growth", "ads ", "advertis", "brand", "content strateg", "launch", "copy "]),
+    ("business", ["startup", "business", "finance", "saas", "pricing", "pitch", "fundrais", "product manag"]),
+    ("dev-tools", ["git ", "github", "cli ", "command line", "debug", "vscode", "editor", "lint", "refactor", "code review", "terminal"]),
+    ("productivity", ["productiv", "notetaking", "note-taking", "automat", "workflow", "checklist", "plann", "calendar", "task manag"]),
+]
+
+CAT_OVERRIDES = {
+    **{n: "design" for n in ["animate", "animate-expo", "animation-vocabulary", "apple-design",
+        "ask-sonner", "emil-design-eng", "find-animation-opportunities", "improve-animations",
+        "mobile-native", "pick-ui-library", "prototype", "review-animations", "write-swift"]},
+    **{n: "media" for n in ["higgsfield-brandkit", "higgsfield-generate", "higgsfield-marketplace-cards",
+        "higgsfield-product-photoshoot", "higgsfield-soul-id", "higgsfield-video-explainer",
+        "higgsfield-websites", "higgsfield-youtube-thumbnail"]},
+    "humanizer": "writing",
+    "copywriting": "writing",
+    "launch": "marketing",
+    "21st-dev": "design",
+    "firecrawl": "data",
+    "local-scrape": "data",
+    "gmaps-scraper": "data",
+    "listmonk": "marketing",
+    "codebase-memory": "dev-tools",
+    "defuddle": "data",
+    "archify-review": "web-dev",
+    "scaffold-exercises": "writing",
+    "pipecat-init": "ai-agents", "pipecat-talk": "ai-agents", "pipecat-deploy": "ai-agents",
+    "twenty-create-app": "web-dev", "twenty-develop-app": "web-dev", "twenty-manage-app": "web-dev",
+    "twenty-publish-app": "web-dev", "twenty-use-twenty-mcp": "ai-agents",
+}
+
+
+def classify_category(dirname, name, description):
+    """Best-effort category for an import without a meaningful frontmatter one."""
+    if dirname in CAT_OVERRIDES:
+        return CAT_OVERRIDES[dirname]
+    text = f"{name} {description}".lower()
+    for cat, kws in CAT_RULES:
+        for kw in kws:
+            if kw in text:
+                return cat
+    return "general"
+
+
 def parse_frontmatter(path):
     with open(path, encoding="utf-8") as f:
         text = f.read()
@@ -133,10 +191,12 @@ def main():
             lic = detect_license(os.path.join(IMPORTS_DIR, dirname), fm, body)
         # multi-line descriptions: take first line
         desc = fm.get("description", "").split("\n")[0].strip()
+        fm_cat = (fm.get("category") or "").strip().lower()
+        category = fm_cat if fm_cat and fm_cat != "general" else classify_category(dirname, name, desc)
         entries.append({
             "name": name,
             "description": desc,
-            "category": fm.get("category", "general"),
+            "category": category,
             "path": f"skills-imported/{dirname}",
             "github_url": f"{GITHUB_REPO}/tree/main/skills-imported/{dirname}",
             "origin": "curated-import",
