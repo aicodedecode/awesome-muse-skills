@@ -14,6 +14,8 @@ A community catalog of **agent skills for Meta's Muse** personal assistant — *
 
 > ⭐ **If this project helps you, please star it** — stars are the simplest way to support the project and help others discover it.
 
+> 🤝 **Sister project: [museaicodes.com](https://museaicodes.com)** — the guide hub for Meta's Muse AI (guides, comparisons, tools). New users can redeem a referral code toward a promotional token offer (up to 1 billion tokens; eligibility and amounts vary — confirm current terms in the app): `3C77QC` · `N8DCUB`.
+
 ![Awesome Muse Skills website — browse, search, and copy any skill](assets/screenshot.png)
 
 *Keywords: awesome list, awesome-list, claude skills, agent skills, ai skills, ai agents, llm skills, meta muse, meta ai, personal ai assistant, prompt engineering, productivity, skill.md, agent skills format*

@@ -3,6 +3,7 @@ import Stats from './components/Stats';
 import HowItWorks from './components/HowItWorks';
 import SkillOfDay from './components/SkillOfDay';
 import CategoryGrid from './components/CategoryGrid';
+import SisterProject from './components/SisterProject';
 import FeaturedSkills from './components/FeaturedSkills';
 import Faq from './components/Faq';
 import Reveal from './components/Reveal';
@@ -62,6 +63,7 @@ export default function Home() {
         </div>
       </section>
       <HowItWorks />
+      <SisterProject />
       <SkillOfDay />
       <FeaturedSkills />
       <CategoryGrid />
