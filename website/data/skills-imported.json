@@ -1,5 +1,17 @@
 [
   {
+    "name": "21st-dev",
+    "description": "",
+    "category": "general",
+    "path": "skills-imported/21st-dev",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/21st-dev",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
     "name": "3d-web-experience",
     "description": "Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3D portfolios, immersive websites, and bringing depth to web experiences. Use when: 3D website, three.js, WebGL, react three fiber, 3D experience.",
     "category": "general",
@@ -981,6 +993,18 @@
     "source": null,
     "source_url": null,
     "license": "MIT",
+    "author": "curated-import"
+  },
+  {
+    "name": "archify-review",
+    "description": "Review Archify issues, PRs, or code through value, cost, and impact to support evidence-based maintenance decisions. Use for issue triage, change reviews, and code quality assessments.",
+    "category": "general",
+    "path": "skills-imported/archify-review",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/archify-review",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
     "author": "curated-import"
   },
   {
@@ -3120,6 +3144,18 @@
     "author": "curated-import"
   },
   {
+    "name": "codebase-memory",
+    "description": "Structural code intelligence — query a tree-sitter knowledge graph of a codebase instead of grepping file-by-file. Use for who-calls-what (trace_path), change blast radius (detect_changes), architecture overviews (get_architecture), dead code, and Cypher queries over code structure. Binary at ~/workspace/tools/codebase-memory-mcp/codebase-memory-mcp, CLI mode only.",
+    "category": "general",
+    "path": "skills-imported/codebase-memory",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/codebase-memory",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
     "name": "codex",
     "description": "Use when the user asks to run Codex CLI (codex exec, codex resume) or references OpenAI Codex for code analysis, refactoring, or automated editing. Uses GPT-5.2 by default for state-of-the-art software engineering.",
     "category": "general",
@@ -3577,7 +3613,7 @@
   },
   {
     "name": "copywriting",
-    "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says \"write copy for,\" \"improve this copy,\" \"rewrite this page,\" \"marketing copy,\" \"headline help,\" or \"CTA copy.\" For email copy, see email-sequence. For popup copy, see popup-cro.",
+    "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says \"write copy for,\" \"improve this copy,\" \"rewrite this page,\" \"marketing copy,\" \"headline help,\" \"CTA copy,\" \"value proposition,\" \"tagline,\" \"subheadline,\" \"hero section copy,\" \"above the fold,\" \"this copy is weak,\" \"make this more compelling,\" or \"help me describe my product.\" Use this whenever someone is working on website text that needs to persuade or convert. For email copy, see emails. For popup copy, see popups. For editing existing copy, see copy-editing. For the offer underneath the copy (bonuses, guarantees, value framing), see offers.",
     "category": "general",
     "path": "skills-imported/copywriting",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/copywriting",
@@ -4361,6 +4397,18 @@
     "category": "general",
     "path": "skills-imported/deeptools",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/deeptools",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
+    "name": "defuddle",
+    "description": "Extract the main content of any web page as clean Markdown or HTML (Obsidian Web Clipper's engine). Use when you need article extraction in a Node/JS runtime, on math-heavy pages, when you want rich metadata (author, published date, schema.org), or as a quick CLI one-liner. The Python-side equivalent is trafilatura in the local-scrape skill.",
+    "category": "general",
+    "path": "skills-imported/defuddle",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/defuddle",
     "origin": "curated-import",
     "source": null,
     "source_url": null,
@@ -6336,6 +6384,18 @@
     "author": "curated-import"
   },
   {
+    "name": "firecrawl",
+    "description": "Scrape any web page to clean markdown, search the web with content extraction, map a site's URLs, crawl whole sites, and pull structured data from pages with an LLM. Use this skill whenever the user wants content from a website that plain fetch can't handle — JavaScript-heavy pages, anti-bot protected sites, bulk page extraction, site crawls, or turning pages into LLM-ready markdown. Also use when the user says \"firecrawl\", \"scrape this site\", \"crawl\", or needs web content for research, RAG, monitoring, or competitive analysis.",
+    "category": "general",
+    "path": "skills-imported/firecrawl",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/firecrawl",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
     "name": "firecrawl-scraper",
     "description": "Deep web scraping, screenshots, PDF parsing, and website crawling using Firecrawl API",
     "category": "general",
@@ -7160,6 +7220,18 @@
     "origin": "curated-import",
     "source": null,
     "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
+    "name": "gmaps-scraper",
+    "description": "",
+    "category": "general",
+    "path": "skills-imported/gmaps-scraper",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/gmaps-scraper",
+    "origin": "curated-import",
+    "source": "gosom/google-maps-scraper",
+    "source_url": "https://github.com/gosom/google-maps-scraper",
     "license": null,
     "author": "curated-import"
   },
@@ -8736,6 +8808,18 @@
     "author": "curated-import"
   },
   {
+    "name": "launch",
+    "description": "When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early access,' 'waitlist,' 'product update,' 'how do I launch this,' 'launch checklist,' 'GTM plan,' or 'we're about to ship.' Use this whenever someone is preparing to release something publicly. For ongoing marketing after launch, see marketing-ideas. For the offer being launched (bonuses, guarantees, scarcity, naming), see offers.",
+    "category": "general",
+    "path": "skills-imported/launch",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/launch",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
     "name": "launch-strategy",
     "description": "When the user wants to plan a product launch, feature announcement, or",
     "category": "general",
@@ -9036,6 +9120,18 @@
     "author": "curated-import"
   },
   {
+    "name": "listmonk",
+    "description": "Self-hosted newsletter and mailing-list manager (open-source Mailchimp alternative). Use when the user wants to run newsletters, manage subscribers, send campaigns or transactional email without per-email SaaS costs — e.g. reviving the RaahUPSC or museaicodes newsletters. Single Go binary + PostgreSQL, full REST API.",
+    "category": "general",
+    "path": "skills-imported/listmonk",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/listmonk",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
     "name": "literature-review",
     "description": "Conduct comprehensive, systematic literature reviews using multiple academic databases (PubMed, arXiv, bioRxiv, Semantic Scholar, etc.). This skill should be used when conducting systematic literature reviews, meta-analyses, research synthesis, or comprehensive literature searches across biomedical, scientific, and technical domains. Creates professionally formatted markdown documents and PDFs with verified citations in multiple citation styles (APA, Nature, Vancouver, etc.).",
     "category": "general",
@@ -9125,6 +9221,18 @@
     "category": "general",
     "path": "skills-imported/loading-states",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/loading-states",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
+    "name": "local-scrape",
+    "description": "Extract clean article text from web pages for free with Trafilatura — no API credits, no browser needed. Use this skill whenever the user wants page content and the page is static (articles, docs, blogs, news). Always try this BEFORE Firecrawl: it is the default scraping path on the user's limited free tier. Also use when the user says \"scrape\", \"extract article text\", or needs bulk text extraction for research or RAG.",
+    "category": "general",
+    "path": "skills-imported/local-scrape",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/local-scrape",
     "origin": "curated-import",
     "source": null,
     "source_url": null,
@@ -11325,6 +11433,42 @@
     "source": "emilkowalski/skills",
     "source_url": "https://github.com/emilkowalski/skills",
     "license": "MIT",
+    "author": "curated-import"
+  },
+  {
+    "name": "pipecat-deploy",
+    "description": "",
+    "category": "general",
+    "path": "skills-imported/pipecat-deploy",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/pipecat-deploy",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
+    "name": "pipecat-init",
+    "description": "",
+    "category": "general",
+    "path": "skills-imported/pipecat-init",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/pipecat-init",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
+    "name": "pipecat-talk",
+    "description": "",
+    "category": "general",
+    "path": "skills-imported/pipecat-talk",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/pipecat-talk",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
     "author": "curated-import"
   },
   {
@@ -13541,6 +13685,18 @@
     "category": "general",
     "path": "skills-imported/sast-configuration",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/sast-configuration",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
+    "name": "scaffold-exercises",
+    "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
+    "category": "general",
+    "path": "skills-imported/scaffold-exercises",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/scaffold-exercises",
     "origin": "curated-import",
     "source": null,
     "source_url": null,
@@ -15953,6 +16109,66 @@
     "category": "general",
     "path": "skills-imported/trigger-dev",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/trigger-dev",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
+    "name": "create-app",
+    "description": "Use when the user wants to create or scaffold a new Twenty app",
+    "category": "general",
+    "path": "skills-imported/twenty-create-app",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/twenty-create-app",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
+    "name": "develop-app",
+    "description": "Use when the user wants to add or modify Twenty app entities, including objects, layouts, logic functions, and front components inside an existing Twenty app.",
+    "category": "general",
+    "path": "skills-imported/twenty-develop-app",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/twenty-develop-app",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
+    "name": "manage-app",
+    "description": "Use when the user wants to manage or troubleshoot tooling, remotes, sync, build, deploy, logs, CI/CD, or operational workflows for an existing Twenty app.",
+    "category": "general",
+    "path": "skills-imported/twenty-manage-app",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/twenty-manage-app",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
+    "name": "publish-app",
+    "description": "Use when the user wants to prepare or verify a Twenty app for npm or marketplace publication, including README/About copy, package metadata, defineApplication marketplace metadata, logos, screenshots, and public assets.",
+    "category": "general",
+    "path": "skills-imported/twenty-publish-app",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/twenty-publish-app",
+    "origin": "curated-import",
+    "source": null,
+    "source_url": null,
+    "license": null,
+    "author": "curated-import"
+  },
+  {
+    "name": "use-twenty-mcp",
+    "description": "Use when the user wants the agent to connect to an existing Twenty workspace through MCP, retrieve or inspect workspace records and metadata, or present Twenty CRM data as readable Markdown with formatted dates, values, record links, and compact tables instead of raw API output.",
+    "category": "general",
+    "path": "skills-imported/twenty-use-twenty-mcp",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/twenty-use-twenty-mcp",
     "origin": "curated-import",
     "source": null,
     "source_url": null,

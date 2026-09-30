@@ -1,0 +1,61 @@
+[
+  {
+    "id": "rapidproxy",
+    "name": "RapidProxy",
+    "description": "Residential proxy provider supporting the Google Maps Scraper project.",
+    "referral_url": "https://www.rapidproxy.io/?ref=gosom",
+    "active": true
+  },
+  {
+    "id": "swiftproxy",
+    "name": "Swiftproxy",
+    "description": "Residential proxy provider with 90M+ IPs across 220+ locations.",
+    "referral_url": "https://www.swiftproxy.net/?ref=gosom",
+    "offer": "Use code PROXY90 for 10% off.",
+    "active": true
+  },
+  {
+    "id": "webshare",
+    "name": "Webshare",
+    "description": "Proxy provider with HTTP and SOCKS5 support.",
+    "referral_url": "https://www.webshare.io/?referral_code=0q3l81eet8mp",
+    "active": true
+  },
+  {
+    "id": "birdproxies",
+    "name": "BirdProxies",
+    "description": "Residential and ISP proxy provider supporting the project.",
+    "referral_url": "https://birdproxies.com/?utm_source=github&utm_medium=sponsorship&utm_campaign=gosom-google-maps-scraper",
+    "active": true
+  },
+  {
+    "id": "proxidize",
+    "name": "Proxidize",
+    "description": "Mobile and residential proxies for Google Maps scraping, local SEO, lead generation, and data collection.",
+    "referral_url": "https://proxidize.com/?utm_source=github&utm_medium=sponsorship&utm_campaign=google_maps_scraper&utm_content=gosom",
+    "offer": "Use code gmaps20 for 20% off.",
+    "active": true
+  },
+  {
+    "id": "nodemaven",
+    "name": "NodeMaven",
+    "description": "The most efficient proxy provider for Web Scraping and Automation with the Highest Quality IP on the market.",
+    "referral_url": "https://go.nodemaven.com/GoogleMapsScrapperseptember",
+    "offer": "Use MAPS35 for 35% off to Mobile and Residential Proxies, or MAPS40 for 40% off to ISP (Static) Proxies.",
+    "active": true
+  },
+  {
+    "id": "decodo",
+    "name": "Decodo",
+    "description": "Proxy provider supporting the Google Maps Scraper project.",
+    "referral_url": "https://visit.decodo.com/APVbbx",
+    "active": true
+  },
+  {
+    "id": "evomi",
+    "name": "Evomi",
+    "description": "Swiss residential proxy provider supporting the project.",
+    "referral_url": "https://evomi.com?utm_source=github&utm_medium=banner&utm_campaign=gosom-maps",
+    "active": true
+  }
+]

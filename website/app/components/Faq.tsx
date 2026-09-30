@@ -14,7 +14,7 @@ const FAQS = [
   },
   {
     q: 'Are these skills really original?',
-    a: 'Two kinds, both honest. The 899 originals were written from scratch for this catalog — zero copied text. The 1,466 curated imports are the best open-source skills from across GitHub, safety-reviewed and republished here with attribution to their original authors, source repositories, and licenses.',
+    a: 'Two kinds, both honest. The 899 originals were written from scratch for this catalog — zero copied text. The 1,484 curated imports are the best open-source skills from across GitHub, safety-reviewed and republished here with attribution to their original authors, source repositories, and licenses.',
   },
   {
     q: 'Can I contribute a skill?',
