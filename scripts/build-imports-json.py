@@ -55,6 +55,8 @@ for n in HIGGSFIELD_8:
 for n in EMIL_13:
     VERIFIED[n] = ("emilkowalski/skills",
                    "https://github.com/emilkowalski/skills", "MIT")
+VERIFIED["motion-design"] = ("LottieFiles/motion-design-skill",
+                             "https://github.com/LottieFiles/motion-design-skill", "MIT")
 
 GH_RE = re.compile(r"github\.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)")
 SKIP_REPOS = {"aicodedecode/awesome-muse-skills", "user/repo", "org/repo",
@@ -101,6 +103,7 @@ CAT_OVERRIDES = {
     "defuddle": "data",
     "archify-review": "web-dev",
     "scaffold-exercises": "writing",
+    "motion-design": "design",
     "pipecat-init": "ai-agents", "pipecat-talk": "ai-agents", "pipecat-deploy": "ai-agents",
     "twenty-create-app": "web-dev", "twenty-develop-app": "web-dev", "twenty-manage-app": "web-dev",
     "twenty-publish-app": "web-dev", "twenty-use-twenty-mcp": "ai-agents",

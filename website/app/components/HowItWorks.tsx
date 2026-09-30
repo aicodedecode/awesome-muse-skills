@@ -3,7 +3,7 @@ import Reveal from './Reveal';
 const STEPS = [
   {
     title: 'Pick a skill',
-    body: 'Browse 2,383 skills across two collections — 899 originals written from scratch, plus 1,484 curated open-source imports. Each one is a single SKILL.md file.',
+    body: 'Browse 2,384 skills across two collections — 899 originals written from scratch, plus 1,485 curated open-source imports. Each one is a single SKILL.md file.',
   },
   {
     title: 'Copy the source',

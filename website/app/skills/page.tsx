@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: 'Catalog',
   description:
-    'Search and browse 899 original Muse skills plus 1,484 curated open-source imports across two collections.',
+    'Search and browse 899 original Muse skills plus 1,485 curated open-source imports across two collections.',
 };
 
 export default function CatalogPage() {

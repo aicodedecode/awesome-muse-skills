@@ -10080,6 +10080,18 @@
     "author": "curated-import"
   },
   {
+    "name": "motion-design",
+    "description": ">",
+    "category": "design",
+    "path": "skills-imported/motion-design",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/motion-design",
+    "origin": "curated-import",
+    "source": "LottieFiles/motion-design-skill",
+    "source_url": "https://github.com/LottieFiles/motion-design-skill",
+    "license": "MIT",
+    "author": "curated-import"
+  },
+  {
     "name": "motion-foundations",
     "description": "Motion tokens, spring presets, performance rules, device adaptation, accessibility enforcement, and SSR safety for React / Next.js using motion/react. Foundation layer — all other motion skills depend on this. Use when setting up motion tokens, spring presets, reduced-motion handling, or SSR-safe animation in React or Next.js.",
     "category": "frontend",

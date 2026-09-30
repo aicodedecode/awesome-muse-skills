@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <Hero tickerNames={tickerNames} originalCount={899} importCount={1484} />
+      <Hero tickerNames={tickerNames} originalCount={899} importCount={1485} />
       <Stats />
       <section className="section" style={{ paddingTop: '2rem' }}>
         <div className="container">
@@ -46,7 +46,7 @@ export default function Home() {
             <Reveal delay={90}>
               <div className="step">
                 <span className="skill-tag skill-tag-import">
-                  1,484 curated imports
+                  1,485 curated imports
                 </span>
                 <h3>The best open-source skills from across GitHub</h3>
                 <p>
@@ -74,7 +74,7 @@ export default function Home() {
                 Find the skill your <em>next question</em> needs
               </h2>
               <p>
-                2,383 skills, free forever. Read one in full, copy it, and
+                2,384 skills, free forever. Read one in full, copy it, and
                 paste it into chat with Muse.
               </p>
               <a href="/skills" className="btn btn-paper">
