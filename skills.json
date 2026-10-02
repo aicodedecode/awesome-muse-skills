@@ -810,6 +810,15 @@
     "license": "MIT"
   },
   {
+    "name": "burner",
+    "description": "Use when the user says \"use my burner\", \"on my burner\", \"what's on my burner?\" (screenshot its screen and send the image), or asks you to do something in a phone app (open an app, tap, type, scroll, check an order). burner gives you a real Android phone the user set aside for you, for apps with no API or website you can automate. Also covers first-time setup.",
+    "category": "workflow-automation",
+    "path": "skills/burner",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/burner",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "business-analyst",
     "description": "Perform business analysis — requirements gathering, process mapping, gap analysis, and stakeholder-ready documentation.",
     "category": "business-marketing",
