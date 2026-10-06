@@ -7596,6 +7596,15 @@
     "license": "MIT"
   },
   {
+    "name": "viral-animation-prompting",
+    "description": "Write prompts that make AI coding agents produce viral-quality animations as code (HTML, Canvas, SVG, Three.js). Covers persona framing, reference stacking, scene blocking, and iteration loops. Use when you want an AI to generate motion graphics, explainers, 3D scenes, or interactive animations — or when a first-draft animation prompt comes back flat.",
+    "category": "creative-design",
+    "path": "skills/viral-animation-prompting",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/viral-animation-prompting",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "vite-pro",
     "description": "Build and optimize with Vite: dev server, plugins, library mode, env handling, code splitting, and production tuning. Use when developing or deploying Vite-based apps.",
     "category": "development",
