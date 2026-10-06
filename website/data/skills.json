@@ -306,6 +306,15 @@
     "license": "MIT"
   },
   {
+    "name": "ai-video-prompts",
+    "description": "Proven prompts behind viral AI-made videos across 4 models — Claude, Muse AI, ChatGPT, Gemini. Browse by model, category, or tech tag, copy a creator's prompt, adapt it to your own model and renderer. Use when you need a motion-graphic, explainer visual, 3D scene, interactive animation, or AI video-gen prompt that already worked in the wild.",
+    "category": "creative-design",
+    "path": "skills/ai-video-prompts",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/ai-video-prompts",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "ai21-guide",
     "description": "Build with AI21 Labs' models — Jurassic for generation and strong task-specific models for enterprise use.",
     "category": "ai-research",

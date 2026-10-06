@@ -1,0 +1,1 @@
+I was trying to teach my son about physics and @SpaceX, so I asked @OpenAI's GPT-6 Astra to make a demonstration. We ended up with an addictive Super Heavy catch game built around SpaceX's Louisiana renderings and published rocket dimensions, with gravity, drag, thrust and fuel burn modeled.

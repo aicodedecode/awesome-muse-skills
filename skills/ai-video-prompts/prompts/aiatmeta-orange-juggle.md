@@ -1,0 +1,1 @@
+A man juggles three oranges, adds a fourth, drops them all, and takes a bow anyway. Warm natural morning light, gentle slow motion, one continuous approximately ten-second moment, quiet room tone, and crisp foley.
