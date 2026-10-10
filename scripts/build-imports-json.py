@@ -58,6 +58,12 @@ for n in EMIL_13:
 VERIFIED["motion-design"] = ("LottieFiles/motion-design-skill",
                              "https://github.com/LottieFiles/motion-design-skill", "MIT")
 
+# anthropics/knowledge-work-plugins port (2026-10-10): identified by the
+# provenance marker stamped into every ported SKILL.md.
+KW_PROVENANCE = "anthropics/knowledge-work-plugins"
+KW_ATTRIB = ("anthropics/knowledge-work-plugins",
+             "https://github.com/anthropics/knowledge-work-plugins", "Apache-2.0")
+
 GH_RE = re.compile(r"github\.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)")
 SKIP_REPOS = {"aicodedecode/awesome-muse-skills", "user/repo", "org/repo",
               "github/github"}
@@ -120,6 +126,31 @@ def classify_category(dirname, name, description):
             if kw in text:
                 return cat
     return "general"
+
+
+# knowledge-work-plugins port: category from the upstream plugin name found in
+# the provenance marker, e.g. .../tree/main/sales/skills/call-prep
+KW_PLUGIN_CATS = {
+    "sales": "business", "marketing": "marketing", "finance": "business",
+    "legal": "business", "human-resources": "business", "operations": "business",
+    "small-business": "business", "product-management": "business",
+    "customer-support": "business", "productivity": "productivity",
+    "data": "data", "bio-research": "data", "engineering": "dev-tools",
+    "design": "design", "pdf-viewer": "productivity",
+    "enterprise-search": "productivity", "cowork-plugin-management": "ai-agents",
+    "partner-built/apollo": "business", "partner-built/brand-voice": "marketing",
+    "partner-built/common-room": "business", "partner-built/slack": "productivity",
+    "partner-built/zoom-plugin": "productivity",
+}
+KW_PLUGIN_RE = re.compile(
+    r"knowledge-work-plugins/tree/main/((?:partner-built/)?[A-Za-z0-9_.-]+)")
+
+
+def kw_plugin_category(body):
+    m = KW_PLUGIN_RE.search(body)
+    if m:
+        return KW_PLUGIN_CATS.get(m.group(1))
+    return None
 
 
 def parse_frontmatter(path):
@@ -188,6 +219,8 @@ def main():
         source, source_url, lic = None, None, None
         if dirname in VERIFIED:
             source, source_url, lic = VERIFIED[dirname]
+        elif KW_PROVENANCE in body:
+            source, source_url, lic = KW_ATTRIB
         else:
             source, source_url = detect_source(body)
         if not lic:
@@ -195,7 +228,12 @@ def main():
         # multi-line descriptions: take first line
         desc = fm.get("description", "").split("\n")[0].strip()
         fm_cat = (fm.get("category") or "").strip().lower()
-        category = fm_cat if fm_cat and fm_cat != "general" else classify_category(dirname, name, desc)
+        if fm_cat and fm_cat != "general":
+            category = fm_cat
+        elif KW_PROVENANCE in body and kw_plugin_category(body):
+            category = kw_plugin_category(body)
+        else:
+            category = classify_category(dirname, name, desc)
         entries.append({
             "name": name,
             "description": desc,

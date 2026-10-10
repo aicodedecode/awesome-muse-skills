@@ -2,15 +2,15 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Skills](https://img.shields.io/badge/skills-2384-blue.svg)](skills/)
+[![Skills](https://img.shields.io/badge/skills-2648-blue.svg)](skills/)
 [![Originals](https://img.shields.io/badge/originals-899-green.svg)](skills/)
-[![Curated imports](https://img.shields.io/badge/curated_imports-1485-orange.svg)](skills-imported/)
+[![Curated imports](https://img.shields.io/badge/curated_imports-1749-orange.svg)](skills-imported/)
 [![Website](https://img.shields.io/badge/website-live-success.svg)](https://aimuse-rho.vercel.app/)
 [![GitHub stars](https://img.shields.io/github/stars/aicodedecode/awesome-muse-skills?style=social)](https://github.com/aicodedecode/awesome-muse-skills/stargazers)
 
-A community catalog of **agent skills for Meta's Muse** personal assistant — **899 original skills** written from scratch, plus **1,485 curated imports**: the best open-source skills from across GitHub, safety-reviewed and republished here with attribution. Free to use.
+A community catalog of **agent skills for Meta's Muse** personal assistant — **899 original skills** written from scratch, plus **1,749 curated imports**: the best open-source skills from across GitHub, safety-reviewed and republished here with attribution. Free to use.
 
-🌐 **Browse it live: [aimuse-rho.vercel.app](https://aimuse-rho.vercel.app/)** — search all 2,384 skills, read any `SKILL.md` in full, and copy it with one tap.
+🌐 **Browse it live: [aimuse-rho.vercel.app](https://aimuse-rho.vercel.app/)** — search all 2,648 skills, read any `SKILL.md` in full, and copy it with one tap.
 
 > ⭐ **If this project helps you, please star it** — stars are the simplest way to support the project and help others discover it.
 
@@ -74,11 +74,11 @@ New to skills? Start with [`getting-started-with-muse-skills`](skills/getting-st
 
 Every skill is an original work: `skills/<name>/SKILL.md` with `name`, `description`, and `category` frontmatter, validated by `scripts/validate.py`. The machine-readable index is [`skills.json`](skills.json).
 
-## Curated imports — 1,485 skills from the ecosystem
+## Curated imports — 1,749 skills from the ecosystem
 
-Alongside the originals, this repo republishes **1,485 curated third-party skills** in [`skills-imported/`](skills-imported/), with per-skill attribution (source repo + license) in [`skills-imported.json`](skills-imported.json) and on every skill's page on the website. Every import was individually safety-scanned (no exfiltration, no installers, no prompt-injection payloads); permissive licenses (MIT / Apache-2.0) are preserved per skill.
+Alongside the originals, this repo republishes **1,749 curated third-party skills** in [`skills-imported/`](skills-imported/), with per-skill attribution (source repo + license) in [`skills-imported.json`](skills-imported.json) and on every skill's page on the website. Every import was individually safety-scanned (no exfiltration, no installers, no prompt-injection payloads); permissive licenses (MIT / Apache-2.0) are preserved per skill.
 
-Notable sources include [affaan-m/ECC](https://github.com/affaan-m/ECC) (design taste, video, content, research, build quality), [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (frontend design commands + craft floor), [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) (AI media generation), [emilkowalski/skills](https://github.com/emilkowalski/skills) (animation & UI craft), [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), [openai/skills](https://github.com/openai/skills), and hundreds more open-source collections. Where the original source couldn't be determined from the skill file, the entry is marked as a curated import — the full original text is preserved so you can trace it.
+Notable sources include [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) (264 role-based skills — sales, finance, legal, marketing, data, engineering and more — adapted for Muse AI), [affaan-m/ECC](https://github.com/affaan-m/ECC) (design taste, video, content, research, build quality), [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (frontend design commands + craft floor), [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) (AI media generation), [emilkowalski/skills](https://github.com/emilkowalski/skills) (animation & UI craft), [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), [openai/skills](https://github.com/openai/skills), and hundreds more open-source collections. Where the original source couldn't be determined from the skill file, the entry is marked as a curated import — the full original text is preserved so you can trace it.
 
 > **License note:** original skills in `skills/` are MIT (this repo). Imported skills in `skills-imported/` keep **their own original licenses** — check the attribution line on each skill before reuse.
 
@@ -98,7 +98,7 @@ Collections worth knowing that are **not** copied here (linked for reference):
 ## Roadmap
 
 - [x] Complete original catalog — 899 skills across 31 categories (done 2026-09-26)
-- [x] Curated imports — 1,485 third-party skills, safety-reviewed, republished with attribution (done 2026-09-27)
+- [x] Curated imports — 1,749 third-party skills, safety-reviewed, republished with attribution (1,485 done 2026-09-27; +264 from `anthropics/knowledge-work-plugins` done 2026-10-10)
 - The [website catalog](https://aimuse-rho.vercel.app/) — browse, search, and preview skills online (live)
 - Community submissions — see [CONTRIBUTING.md](CONTRIBUTING.md)
 
