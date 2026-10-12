@@ -11856,6 +11856,30 @@
     "author": "curated-import"
   },
   {
+    "name": "muse-gadget-forge",
+    "description": "Build your own Muse gadget — your ears and voice in the user's room — on the user's own computer: set up ESP-IDF on the muse-local-gateway workbench, build the Muse Gadget SDK firmware, flash the ESP32 board on their USB port, read its log, and walk the user through pairing. Use when the user wants a new or updated Muse gadget, or one that misbehaves.",
+    "category": "muse",
+    "path": "skills-imported/muse-gadget-forge",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/muse-gadget-forge",
+    "origin": "curated-import",
+    "source": "toddoward/muse-gadget-forge",
+    "source_url": "https://github.com/toddoward/muse-gadget-forge",
+    "license": "Apache-2.0",
+    "author": "curated-import"
+  },
+  {
+    "name": "muse-local-gateway",
+    "description": "Work directly on the user's own computer over Tailscale: put files in their shared folder and run shell commands in a sandboxed bench next to it (builds, scripts, USB serial boards). Use when the user wants Muse to act on their home PC, lab box, or home server instead of inside Muse's own VM.",
+    "category": "muse",
+    "path": "skills-imported/muse-local-gateway",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills-imported/muse-local-gateway",
+    "origin": "curated-import",
+    "source": "toddoward/muse-local-gateway",
+    "source_url": "https://github.com/toddoward/muse-local-gateway",
+    "license": "Apache-2.0",
+    "author": "curated-import"
+  },
+  {
     "name": "n8n-workflow-patterns",
     "description": "Proven architectural patterns for building n8n workflows.",
     "category": "productivity",
