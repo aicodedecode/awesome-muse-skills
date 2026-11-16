@@ -6957,6 +6957,15 @@
     "license": "MIT"
   },
   {
+    "name": "study-planner",
+    "description": "Build weekly study plans with spaced repetition. Use when the user wants a study schedule, revision plan, or exam timetable.",
+    "category": "everyday-assistant",
+    "path": "skills/study-planner",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/study-planner",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "styled-components-pro",
     "description": "Style React with styled-components: theming, transient props, attrs, SSR, and performance patterns. Use when building component-scoped styles with CSS-in-JS.",
     "category": "development",
