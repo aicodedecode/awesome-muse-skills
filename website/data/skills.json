@@ -1260,6 +1260,15 @@
     "license": "MIT"
   },
   {
+    "name": "cloudish",
+    "description": "Deploy an app to Cloudish, an agent-first cloud that builds a Dockerfile, source folder, or existing image server-side and serves it at a public URL, with persistent volumes, encrypted secrets, and OIDC sign-in. Use when the user asks to deploy, host, or put online a website, API, bot, worker, or MCP server on Cloudish, or to get a Cloudish API key.",
+    "category": "development",
+    "path": "skills/cloudish",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/cloudish",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "cmip6-workflows",
     "description": "Using CMIP6 climate model output — finding data, multi-model means, scenario logic, and bias-aware analysis.",
     "category": "scientific",
