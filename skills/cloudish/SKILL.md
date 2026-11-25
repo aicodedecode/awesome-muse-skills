@@ -55,7 +55,7 @@ key it returns, as `Authorization: Bearer $CLOUDISH_API_KEY`.
 ```bash
 curl -X POST https://cloudish.ai/api/v1/keys \
   -H "content-type: application/json" \
-  -d '{"alias": "my-app", "agent": "meta-muse", "ref": "awesome-muse-skills"}'
+  -d '{"alias": "my-app", "agent": "meta-muse", "source": "skill-request"}'
 ```
 
 The response carries `key` (keep it: export it as `CLOUDISH_API_KEY` for the
@@ -63,10 +63,22 @@ session) and a single-use `claimUrl`. If a key for this work already exists in
 the environment, reuse it instead of minting another.
 
 `alias` names what you are deploying; the returned `apiKey.alias` becomes the
-`{owner}` in project paths. New keys start with a small credit grant. Claiming
-is optional and needs a human: give them the `claimUrl` (not the raw key) and
-mention it expires in 30 minutes. `GET /api/v1/credits/claim` mints a fresh
-one when needed.
+`{owner}` in project paths, and you can rename it later with `PATCH /api/v1/me`.
+New keys start with a small credit grant. `agent` and `source` are optional:
+`source` says what brought you here (`user-request`, `plugin-request`,
+`skill-request`, `agent-choice`, `automation`, `evaluating`, or your own
+words). Leave out anything you don't know.
+
+Claiming is optional and needs a human: give them the `claimUrl` (not the raw
+key) and mention it expires in 30 minutes. Claiming may also add a small credit
+bonus to the human's account, which they can move into the key, and it works
+for a human who already has a Cloudish account. `GET /api/v1/credits/claim`
+mints a fresh link when needed.
+
+Advanced: an orchestrator that starts many agents which may never deploy can
+issue a **mint token** (`POST /api/v1/mint-tokens`) instead of a key. The agent
+trades the token for a real child key on its first deploy, so an agent that
+never deploys never holds a spendable key. See the minting reference below.
 
 ## 2. Deploy — one call creates or updates
 
@@ -118,9 +130,23 @@ Run mode on every deploy:
   only while awake; the next request wakes it in seconds. Add
   `"wakeEveryMinutes": 60` to also wake it on a schedule.
 
+`PATCH /api/v1/projects/{owner}/{name}` changes the run mode without a
+redeploy. An app's `status` says why it's down — `sleeping`, `out_of_credits`
+(it starts again once the key has credits), or `stopped` — and an always-on
+app's `runway` adds `alwaysOnHoursLeft`.
+
+`runtimeClass` (`gvisor`, or `kata` for a VM) is an optional hint for how the
+app's pods should be sandboxed. A datacenter that supports that sandbox uses
+it; one that doesn't ignores the hint and runs its own default, so leaving it
+out is always safe. On a redeploy, leaving it out keeps the app's current hint.
+
 `port` is the port the server listens on (default 8080), regardless of the
 Dockerfile's `EXPOSE` — an nginx image listens on 80. Get it wrong and
 requests answer `503` with "nothing accepts connections on port …".
+
+`DELETE /api/v1/projects/{owner}/{name}` stops the container and its billing;
+deploying the same name again starts fresh. A volume is deleted with the
+project, so its data is gone.
 
 ## 3. Config, secrets, and storage
 
@@ -142,13 +168,29 @@ curl -X PUT https://cloudish.ai/api/v1/projects/YOUR_ALIAS/my-app/secrets \
   -d '{"name": "OPENAI_API_KEY", "value": "sk-..."}'
 ```
 
+`PUT …/secrets` also accepts several at once, as a map of names to values
+saved all or none and answered as `{"secrets": [...]}`:
+
+```bash
+curl -X PUT https://cloudish.ai/api/v1/projects/YOUR_ALIAS/my-app/secrets \
+  -H "Authorization: Bearer $CLOUDISH_API_KEY" \
+  -H "content-type: application/json" \
+  -d '{"OPENAI_API_KEY": "sk-...", "SMTP_PASSWORD": "..."}'
+```
+
 `GET …/secrets` lists names only; `DELETE …/secrets/NAME` removes one. Saving
-or deleting a secret restarts a running app.
+or deleting a secret restarts a running app and leaves an idle one idle.
 
 Volumes persist across restarts and redeploys. `volumeSizeGb` must be 1, 5, or
 20; the mount defaults to `/data`. A volume attaches to one container, so an
 app with a volume cannot run replicas. Deleting the project deletes its volume
-and data; a zero balance only stops the app and keeps the data.
+and data; a zero balance only stops the app (status `out_of_credits`) and keeps
+the data, unbilled, until credits return.
+
+Backups are an option, not a requirement: the app can expose admin endpoints to
+download and restore one (behind a secret), or send automatic backups to a
+service you already use. Cloudish's commitments about that data are in the
+privacy policy (<https://cloudish.ai/privacy.md>).
 
 ## 4. Verify, then report
 
@@ -209,8 +251,10 @@ verify the `id_token` in the app.
 ## 6. Credits
 
 Deploy, `/api/v1/me`, and credits responses carry `runway`: `balance` and
-`creditsPerHour`. A sleeping app costs nothing until it wakes. Add credits by
-giving the user a fresh claim link (section 1), or transfer between keys:
+`creditsPerHour` (plus `alwaysOnHoursLeft` for an always-on app). A key minted
+from a mint token also reports its daily quota, which the key can't raise. A
+sleeping app costs nothing until it wakes. Add credits by giving the user a
+fresh claim link (section 1), or transfer between keys:
 `POST /api/v1/credits/transfer` with `{"to": "<alias>", "amount": 1}`,
 authenticated by the parent key.
 
@@ -220,6 +264,8 @@ authenticated by the parent key.
 - Isolation model: <https://cloudish.ai/container.md>
 - Credits and claiming: <https://cloudish.ai/credits.md>
 - Instance sizes: <https://cloudish.ai/instances.md>
+- Mint tokens for orchestrator-started agents: <https://cloudish.ai/minting.md>
+- Privacy policy: <https://cloudish.ai/privacy.md>
 - Changelog: <https://cloudish.ai/changelog.md>
 
 Adapted from Cloudish's public skill (`https://github.com/cloudishai/skills`,
