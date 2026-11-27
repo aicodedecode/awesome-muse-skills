@@ -3114,6 +3114,15 @@
     "license": "MIT"
   },
   {
+    "name": "health-insights-space",
+    "description": "Build a health insights Space that mirrors your health record store: current weight and body composition, recent labs and events, active hypotheses and signals with their evidence, and open questions. Use when the user wants a health overview Space fed by their own health records rather than a chat summary.",
+    "category": "muse",
+    "path": "skills/health-insights-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/health-insights-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "helm-pro",
     "description": "Helm guidance — chart structure, templating, values management, releases, hooks, and chart best practices.",
     "category": "development",
@@ -4104,6 +4113,15 @@
     "license": "MIT"
   },
   {
+    "name": "medication-tracker-space",
+    "description": "Build a medication tracker Space that mirrors your medication records: current medications, dose logs, and related routines, mirrored strictly from records and never inferred. Use when the user wants a medication overview Space fed by their own medication tracker or health records.",
+    "category": "muse",
+    "path": "skills/medication-tracker-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/medication-tracker-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "meeting-notes-ai",
     "description": "Use AI for meeting notes — automated summaries, action item extraction, and turning meetings into searchable knowledge.",
     "category": "enterprise-communication",
@@ -4617,6 +4635,15 @@
     "license": "MIT"
   },
   {
+    "name": "nutrition-tracker-space",
+    "description": "Build a nutrition tracker Space that mirrors your food diary against a fixed set of daily targets and lab watch flags, with the diary app as the single source of truth. Use when the user wants a nutrition dashboard Space fed by their food logging app.",
+    "category": "muse",
+    "path": "skills/nutrition-tracker-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/nutrition-tracker-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "nx-pro",
     "description": "Run JS monorepos with Nx: task graph, computation caching, affected commands, generators, and module boundaries. Use when managing large monorepos with enforced architecture.",
     "category": "development",
@@ -5045,6 +5072,15 @@
     "category": "everyday-assistant",
     "path": "skills/personal-research-assistant",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/personal-research-assistant",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
+    "name": "pet-tracker-space",
+    "description": "Build a pet tracker Space that mirrors your pet's records: profile, treatments, vaccinations, conditions, supplies, and daily care logs. Use when the user wants a pet health and care overview Space fed by their pet records.",
+    "category": "muse",
+    "path": "skills/pet-tracker-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/pet-tracker-space",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
