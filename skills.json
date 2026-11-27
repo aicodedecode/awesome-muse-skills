@@ -4284,15 +4284,6 @@
     "license": "MIT"
   },
   {
-    "name": "money-dashboard-space",
-    "description": "Build a money dashboard Space that mirrors a snapshot built from your bank data and budgeting app: net worth, accounts, budget categories, findings, recurring items, and recent transactions. Use when the user wants a personal finance overview Space that stays current on a daily refresh.",
-    "category": "muse",
-    "path": "skills/money-dashboard-space",
-    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/money-dashboard-space",
-    "author": "awesome-muse-skills",
-    "license": "MIT"
-  },
-  {
     "name": "mongodb-pro",
     "description": "MongoDB modeling, aggregation pipelines, and operations — use when designing schemas or tuning Mongo queries.",
     "category": "database",
@@ -4667,15 +4658,6 @@
     "category": "ai-research",
     "path": "skills/octoai-guide",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/octoai-guide",
-    "author": "awesome-muse-skills",
-    "license": "MIT"
-  },
-  {
-    "name": "office-attendance-space",
-    "description": "Build an in-office attendance Space that derives office vs remote days from calendar work blocks, with tallies against a target average. Use when the user has a hybrid-work attendance expectation and wants it tracked from their calendar rather than self-reported.",
-    "category": "muse",
-    "path": "skills/office-attendance-space",
-    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/office-attendance-space",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
@@ -5414,15 +5396,6 @@
     "category": "creative-design",
     "path": "skills/presentation-designer",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/presentation-designer",
-    "author": "awesome-muse-skills",
-    "license": "MIT"
-  },
-  {
-    "name": "price-drop-claims-space",
-    "description": "Build a price drop claims Space that tracks watched purchases, the lower prices found for them with dated evidence, and the money-back claims ready to file, where filing always waits for the user's approval. Use when the user buys from retailers with price-adjustment windows and wants drops caught and claims prepared.",
-    "category": "muse",
-    "path": "skills/price-drop-claims-space",
-    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/price-drop-claims-space",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
@@ -6350,15 +6323,6 @@
     "category": "security",
     "path": "skills/sast-dast-pro",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/sast-dast-pro",
-    "author": "awesome-muse-skills",
-    "license": "MIT"
-  },
-  {
-    "name": "savings-goals-space",
-    "description": "Build a savings goals Space that shows each goal's target, funded percentage, and a long-horizon projection at the current monthly pace, all recomputed from the goal records and live balances. Use when the user wants a savings or early-retirement progress Space tied to their real accounts and budget.",
-    "category": "muse",
-    "path": "skills/savings-goals-space",
-    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/savings-goals-space",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
