@@ -504,6 +504,15 @@
     "license": "MIT"
   },
   {
+    "name": "automations-monitor-space",
+    "description": "Build an automations inventory Space that mirrors every scheduled job and event listener your assistant runs: totals, enabled and disabled counts, failed last runs, and a Needs Attention set that gets fixed, not just reported. Use when the user wants visibility into their automations, asks what is scheduled or failing, or wants a board for automation health.",
+    "category": "muse",
+    "path": "skills/automations-monitor-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/automations-monitor-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "autonomous-agent-patterns",
     "description": "A pattern catalog for autonomous agents — ReAct, plan-and-execute, reflection, multi-agent debate, toolformer-style tool use, and when each fits. Use when choosing the control pattern for an agent task.",
     "category": "ai-research",
@@ -1400,6 +1409,24 @@
     "category": "security",
     "path": "skills/compliance-mapper",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/compliance-mapper",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
+    "name": "connector-shortlist-space",
+    "description": "Build a connector shortlist Space: the short, honest list of integrations actually installed, connected, or in use on your account, refreshed weekly from the real inventory. Use when the user wants a clean reference of what their assistant can actually reach, or asks which connectors they have.",
+    "category": "muse",
+    "path": "skills/connector-shortlist-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/connector-shortlist-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
+    "name": "connectors-health-space",
+    "description": "Build a connector health Space that mirrors the state of your connected services: a per-connector verdict from a fresh probe, the evidence behind it, repair notes, and counts. Use when the user wants to know which of their integrations are healthy, broken, or stale, or wants a board for connection upkeep.",
+    "category": "muse",
+    "path": "skills/connectors-health-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/connectors-health-space",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
@@ -2313,6 +2340,15 @@
     "license": "MIT"
   },
   {
+    "name": "energy-dashboard-space",
+    "description": "Build a daily energy Space that shows last night's sleep against your sleep need, weight trend, and the recent entries from your other trackers that affect energy, with gaps labeled instead of hidden. Use when the user wants a daily energy or recovery overview Space fed by their wearable or phone health data.",
+    "category": "muse",
+    "path": "skills/energy-dashboard-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/energy-dashboard-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "energy-manager",
     "description": "Manage energy, not just time: map your ultradian rhythms, align tasks to energy states, and design recovery. Use when time management alone isn't fixing fatigue or afternoon slumps.",
     "category": "productivity",
@@ -3119,6 +3155,15 @@
     "category": "development",
     "path": "skills/helm-pro",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/helm-pro",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
+    "name": "home-assistant-space",
+    "description": "Build a smart home status Space that mirrors your home setup: hub status, integration and device state, automations, blockers, and migration progress, reconciled against live device state before anything is shown. Use when the user wants a smart home dashboard Space, is migrating devices between hubs, or asks to track the state of their smart home setup.",
+    "category": "muse",
+    "path": "skills/home-assistant-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/home-assistant-space",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
