@@ -108,6 +108,15 @@
     "license": "MIT"
   },
   {
+    "name": "agent-inbox-space",
+    "description": "Build an Agent Inbox space that surfaces the agent's own agent-to-agent (A2A) email correspondence: the A2A message stream from the agent's mailbox, a peers view built from the local Agent Card registry, task threads with status, and per-message verification state. Use when the user runs A2A over email (see the a2a-for-muse skill) and wants a surface for the agent's own correspondence with other agents, an agent inbox, an A2A dashboard, or a peers view.",
+    "category": "ai-maestro",
+    "path": "skills/agent-inbox-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/agent-inbox-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "agent-management",
     "description": "Manage fleets of local AI agents: lifecycle, monitoring, task assignment, and resource control. Use when running multiple CLI agents via an orchestrator like AI Maestro.",
     "category": "ai-maestro",
