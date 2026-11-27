@@ -1791,15 +1791,6 @@
     "license": "MIT"
   },
   {
-    "name": "decision-journal-space",
-    "description": "Build a decision journal Space that mirrors a canonical decision journal file: every entry, its dated predictions, and reviews coming due, recomputed on a daily refresh. Use when the user keeps (or wants) a decision journal and wants a browsable Space over it. This is the Space template companion to the decision-journal-method skill, which covers the journaling method itself.",
-    "category": "muse",
-    "path": "skills/decision-journal-space",
-    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/decision-journal-space",
-    "author": "awesome-muse-skills",
-    "license": "MIT"
-  },
-  {
     "name": "deep-work-planner",
     "description": "Plan and protect deep work: scheduling focus blocks, task selection, shutdown rituals, and measuring depth. Use when important work never gets sustained attention or days fill with shallow tasks.",
     "category": "productivity",
