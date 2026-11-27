@@ -62,15 +62,8 @@ generically in the build which sources are wired in; typical sources:
 
 - A Gmail account (personal or work).
 - An Outlook / Microsoft 365 mailbox.
-- An assistant or agent mailbox on the user's own domain.
+- An assistant mailbox on the user's own domain.
 - Any additional mail source the user has connected.
-
-Optional extra lane: agent-to-agent messages. If the user's assistant
-exchanges structured messages with other assistants (for example over an
-agent protocol carried by email), those messages can be ingested as one
-more lane in the same stream, badged so they are visually distinct and
-reachable through search like everything else. Treat them as ordinary
-records with a source badge; do not build a separate surface for them.
 
 Requirements for each source:
 
