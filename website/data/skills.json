@@ -1782,15 +1782,6 @@
     "license": "MIT"
   },
   {
-    "name": "deal-watch-board-space",
-    "description": "Build a deal watch board Space for a fixed, user-approved list of products during a sale event: today's best verified price per item across sellers, savings, and one batched message when any deal changes. Use when the user is tracking specific items through Black Friday, Cyber Monday, or another sale window.",
-    "category": "muse",
-    "path": "skills/deal-watch-board-space",
-    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/deal-watch-board-space",
-    "author": "awesome-muse-skills",
-    "license": "MIT"
-  },
-  {
     "name": "debugging-pro",
     "description": "Systematic debugging: reproduce, isolate, hypothesize, verify — with tooling for hard bugs. Use when stuck on a bug, flaky failure, or production incident.",
     "category": "development",
@@ -3902,15 +3893,6 @@
     "category": "creative-design",
     "path": "skills/logo-designer",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/logo-designer",
-    "author": "awesome-muse-skills",
-    "license": "MIT"
-  },
-  {
-    "name": "lookbook-space",
-    "description": "Build a lookbook Space over your wardrobe inventory: what you own, organized for outfit planning and gap-spotting, refreshed daily from the wardrobe records. Use when the user keeps a wardrobe inventory and wants a visual lookbook Space over it.",
-    "category": "muse",
-    "path": "skills/lookbook-space",
-    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/lookbook-space",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
@@ -6350,15 +6332,6 @@
     "category": "security",
     "path": "skills/sast-dast-pro",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/sast-dast-pro",
-    "author": "awesome-muse-skills",
-    "license": "MIT"
-  },
-  {
-    "name": "saved-reels-catalog-space",
-    "description": "Build a saved reels catalog Space: a searchable visual catalog of your saved short-form videos, grouped by what each one actually contains and labeled with its topic and collection, with links back to the originals. Use when the user's saved videos have become an unsearchable pile and they want them organized.",
-    "category": "muse",
-    "path": "skills/saved-reels-catalog-space",
-    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/saved-reels-catalog-space",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
