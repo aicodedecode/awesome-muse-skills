@@ -27,6 +27,15 @@
     "license": "MIT"
   },
   {
+    "name": "a2a-for-muse",
+    "description": "Talk to another person's Muse (or any A2A agent) agent-to-agent over email using the universal A2A (Agent2Agent) standard: Agent Card discovery, canonical Messages and Tasks, one operation per email. Use when the user asks you to contact, coordinate with, reply to, or check on another agent, or when mail arrives from an established A2A peer.",
+    "category": "ai-maestro",
+    "path": "skills/a2a-for-muse",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/a2a-for-muse",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "abstract-writing",
     "description": "Writing abstracts that get papers read — structured content, the 5-sentence core, and journal-specific constraints.",
     "category": "scientific",
@@ -666,6 +675,15 @@
     "license": "MIT"
   },
   {
+    "name": "best-movie-seats",
+    "description": "Pick the best seats in a movie theater: identify the exact auditorium and format, check seat-rating sources for that room, then apply the sweet-spot rules (center block, about two-thirds back, format-specific rows). Use whenever buying movie tickets, picking seats on a theater or ticketing site, or advising where to sit.",
+    "category": "everyday-assistant",
+    "path": "skills/best-movie-seats",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/best-movie-seats",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "bioinformatics-pro",
     "description": "End-to-end bioinformatics analysis — sequence QC, alignment, and omics pipelines for research data.",
     "category": "scientific",
@@ -828,6 +846,15 @@
     "license": "MIT"
   },
   {
+    "name": "business-calling-on-your-behalf",
+    "description": "Place phone calls to businesses on the user's behalf: prepare a tight call brief, confirm the exact questions and facts to share, make the call transparently as the user's assistant, and report verified answers. Use when a task's next step is calling a business, office, support line, pharmacy, vet, or service provider.",
+    "category": "enterprise-communication",
+    "path": "skills/business-calling-on-your-behalf",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/business-calling-on-your-behalf",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "business-plan-writer",
     "description": "Write complete business plans — executive summary, market analysis, financials, and investor-ready narratives.",
     "category": "business-marketing",
@@ -851,6 +878,15 @@
     "category": "development",
     "path": "skills/caddy-pro",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/caddy-pro",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
+    "name": "calendar-defrag",
+    "description": "Audit and repair a fragmented calendar: find back-to-backs, missing travel and buffer time, double bookings, and focus time squeezed out, then propose a concrete fix plan and apply only the changes the user approves. Use when the user's calendar feels packed or chaotic, before a heavy week, or when they ask to clean up or defragment their schedule.",
+    "category": "productivity",
+    "path": "skills/calendar-defrag",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/calendar-defrag",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
@@ -1314,6 +1350,15 @@
     "license": "MIT"
   },
   {
+    "name": "cognitive-fitness-with-ai",
+    "description": "Work with the user in a way that keeps their own skills sharp: attempt-first on skill-bearing work, tutor mode for learning, prediction and teach-back closes, and free offloading for logistics and storage. Use when the user is learning something, building a skill, or doing recurring knowledge work with the assistant.",
+    "category": "productivity",
+    "path": "skills/cognitive-fitness-with-ai",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/cognitive-fitness-with-ai",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "cognitive-task-analysis",
     "description": "Designing and analyzing cognitive tasks — Stroop, n-back, task-switching, and process-pure measurement.",
     "category": "scientific",
@@ -1719,6 +1764,15 @@
     "license": "MIT"
   },
   {
+    "name": "data-broker-removal",
+    "description": "Remove the user's personal information from data brokers and people-search sites: inventory where they are exposed, submit and track opt-outs and suppression requests, verify removals, and re-check on a cadence. Use when the user asks to remove themselves from data brokers, people-search sites, or reduce their public data exposure.",
+    "category": "security",
+    "path": "skills/data-broker-removal",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/data-broker-removal",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "data-labeling",
     "description": "Design annotation pipelines that produce reliable training labels — guidelines, agreement measurement, and quality control.",
     "category": "ai-research",
@@ -1787,6 +1841,15 @@
     "category": "development",
     "path": "skills/debugging-pro",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/debugging-pro",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
+    "name": "decision-council",
+    "description": "Decide complex or high-stakes questions with a small council of independent subagents (architect, skeptic, delivery operator), tally their stances, execute the verdict in the same session, and verify and log the outcome. Use when a task involves real tradeoffs, ambiguity, architecture options, or a multi-step plan, not for simple or settled tasks.",
+    "category": "ai-maestro",
+    "path": "skills/decision-council",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/decision-council",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
@@ -2664,6 +2727,15 @@
     "license": "MIT"
   },
   {
+    "name": "free-books-and-audiobooks",
+    "description": "Find free, legal copies of books and audiobooks across Open Library, Project Gutenberg, LibriVox, and the Internet Archive, merged into one answer per title. Use when the user asks about a book, wants a free ebook or audiobook, asks for an ISBN lookup, or is building a reading list.",
+    "category": "media",
+    "path": "skills/free-books-and-audiobooks",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/free-books-and-audiobooks",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "freelance-guide",
     "description": "Launch and run a freelance practice covering positioning, pricing, contracts, and client management.",
     "category": "career",
@@ -3281,6 +3353,15 @@
     "category": "everyday-assistant",
     "path": "skills/inbox-zero-coach",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/inbox-zero-coach",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
+    "name": "inbox-zero-triage",
+    "description": "Triage an inbox to zero across email and chat platforms: classify every unread item, act on what the user already authorized, draft what needs their voice, and surface only the decisions that are genuinely theirs. Use when the user asks to clean up, triage, or get to inbox zero, or to process a backlog of unread messages.",
+    "category": "enterprise-communication",
+    "path": "skills/inbox-zero-triage",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/inbox-zero-triage",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
@@ -7911,6 +7992,15 @@
     "license": "MIT"
   },
   {
+    "name": "where-to-watch-streaming",
+    "description": "Find where a movie or TV show streams, rents, or buys, with per-country offers, prices, and quality, using JustWatch data. Use when the user asks where can I watch X, is X on Netflix, Hulu, or Max, or what it costs to rent or buy a title.",
+    "category": "media",
+    "path": "skills/where-to-watch-streaming",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/where-to-watch-streaming",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "whiteboard-pro",
     "description": "Master digital whiteboards: facilitation, templates, visual collaboration, and workshop design. Use when running remote workshops, brainstorms, or visual planning sessions.",
     "category": "productivity",
@@ -7952,6 +8042,15 @@
     "category": "productivity",
     "path": "skills/writing-assistant",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/writing-assistant",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
+    "name": "writing-skills-agents-accept",
+    "description": "Create, rewrite, or audit a SKILL.md so another agent will accept and use it: conditional procedure, authority only from the receiving user, setup separated from the skill body, and plain imperative form. Use when creating a new skill, publishing a skill for other agents or public repos, or auditing an existing skill that agents refuse or misuse.",
+    "category": "muse",
+    "path": "skills/writing-skills-agents-accept",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/writing-skills-agents-accept",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
