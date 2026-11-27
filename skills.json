@@ -441,6 +441,15 @@
     "license": "MIT"
   },
   {
+    "name": "assistant-dash-space",
+    "description": "Build an assistant dash Space: the single board of everything that needs the user's attention or decision, compiled from open tracked items and active goals, plus today's agenda. Use when the user wants one \"what needs me\" board for their assistant, or when items keep getting handled in chat but left open on the board.",
+    "category": "muse",
+    "path": "skills/assistant-dash-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/assistant-dash-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "astro-pro",
     "description": "Idiomatic Astro: islands architecture, content collections, SSR/SSG choices, and performance-first builds. Use when writing, reviewing, or structuring Astro sites.",
     "category": "development",
@@ -1683,11 +1692,29 @@
     "license": "MIT"
   },
   {
+    "name": "daily-brief-space",
+    "description": "Build a daily brief Space: a living briefing compiled several times a day from your calendar, open items, and what changed, with sections for top of mind and looking ahead. Use when the user wants a briefing surface that stays current through the day instead of a single morning message.",
+    "category": "muse",
+    "path": "skills/daily-brief-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/daily-brief-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "daily-briefing",
     "description": "Build a morning briefing ritual with Muse: overnight priorities, today's calendar, weather-aware planning, and top 3 focus items as a concise chat summary.",
     "category": "everyday-assistant",
     "path": "skills/daily-briefing",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/daily-briefing",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
+    "name": "daily-quiz-space",
+    "description": "Build a daily quiz Space: one fresh two-question personality quiz per day (pick an option, slide a scale), a named playful result, and a full archive where retakes append dated attempts and never overwrite history. Use when the user wants a light daily ritual Space with a growing archive.",
+    "category": "muse",
+    "path": "skills/daily-quiz-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/daily-quiz-space",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
@@ -4226,6 +4253,15 @@
     "category": "productivity",
     "path": "skills/mind-mapper",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/mind-mapper",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
+    "name": "missed-communications-space",
+    "description": "Build a missed communications Space: a reply queue across all your messaging channels showing every thread and group chat whose latest inbound is unread with no reply yet, with a draft where one exists. Use when the user wants one place that answers \"who is waiting on me\" across channels.",
+    "category": "muse",
+    "path": "skills/missed-communications-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/missed-communications-space",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
