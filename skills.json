@@ -3114,6 +3114,15 @@
     "license": "MIT"
   },
   {
+    "name": "health-insights-space",
+    "description": "Build a health insights Space that mirrors your health record store: current weight and body composition, recent labs and events, active hypotheses and signals with their evidence, and open questions. Use when the user wants a health overview Space fed by their own health records rather than a chat summary.",
+    "category": "muse",
+    "path": "skills/health-insights-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/health-insights-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "helm-pro",
     "description": "Helm guidance — chart structure, templating, values management, releases, hooks, and chart best practices.",
     "category": "development",
