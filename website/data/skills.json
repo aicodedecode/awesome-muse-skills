@@ -1359,6 +1359,15 @@
     "license": "MIT"
   },
   {
+    "name": "combined-inbox-space",
+    "description": "Build a Combined Inbox space that merges every connected mailbox into one live stream with a single filter control and a scheduled refresh. Use when the user has two or more mail accounts connected and wants one place to read all their mail instead of switching between mailboxes, or asks for a unified inbox, an all-mail view, or an inbox space or dashboard.",
+    "category": "muse",
+    "path": "skills/combined-inbox-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/combined-inbox-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "comic-artist",
     "description": "Create comics and graphic narratives with panel flow, lettering, pacing, and visual storytelling.",
     "category": "creative-design",
