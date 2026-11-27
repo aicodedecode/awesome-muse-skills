@@ -104,6 +104,12 @@ Build plan:
 
 - Exactly one filter control: a strip or menu with one entry per source
   (All, then each mailbox) that filters the stream by source badge.
+- The same control also filters by contact: a multi-select of the
+  senders and people represented in the stream, so the user can narrow
+  to one contact or several. Contact filtering composes with the
+  mailbox filter and with search: a row shows only when it matches
+  every active criterion. It stays inside the one filter control;
+  contact filtering is not a second control.
 - Search is a separate single input that matches sender, subject, and
   body text across all sources.
 - One control per function, always. If a second strip, panel, or menu
