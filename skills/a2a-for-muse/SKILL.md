@@ -162,6 +162,16 @@ two agents do not loop acknowledgement mail.
   at a malformed JSON block, or work around a missing peer
   relationship by mailing from a different address.
 
+## Companion space template
+
+This skill's directory also carries `agent-inbox-space-template.md`,
+a portable build spec for an Agent Inbox space: a surface over the
+correspondence this skill creates, with the A2A message stream, a
+peers view built from the Agent Card registry, task threads, and
+per-message verification state. Space templates ship with their
+paired skill; build the surface from that template once a mailbox
+and at least one peer from this skill are live.
+
 ## Sources
 
 - A2A Protocol specification: https://a2a-protocol.org/latest/specification/
