@@ -1782,6 +1782,15 @@
     "license": "MIT"
   },
   {
+    "name": "deal-watch-board-space",
+    "description": "Build a deal watch board Space for a fixed, user-approved list of products during a sale event: today's best verified price per item across sellers, savings, and one batched message when any deal changes. Use when the user is tracking specific items through Black Friday, Cyber Monday, or another sale window.",
+    "category": "muse",
+    "path": "skills/deal-watch-board-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/deal-watch-board-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "debugging-pro",
     "description": "Systematic debugging: reproduce, isolate, hypothesize, verify — with tooling for hard bugs. Use when stuck on a bug, flaky failure, or production incident.",
     "category": "development",
@@ -3051,6 +3060,15 @@
     "license": "MIT"
   },
   {
+    "name": "group-trip-space",
+    "description": "Build a group trip Space for one specific trip: the event details, dates, bookings with their evidence state, and a planning checklist, refreshed daily from the event page, calendar, and mail. Use when the user is going on a group trip and wants one board for what is actually booked versus merely planned.",
+    "category": "muse",
+    "path": "skills/group-trip-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/group-trip-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "growth-hacker",
     "description": "Run growth experiments — acquisition loops, activation, retention, and referral systems driven by rapid testing.",
     "category": "business-marketing",
@@ -3483,6 +3501,15 @@
     "license": "MIT"
   },
   {
+    "name": "job-hunt-tracker-space",
+    "description": "Build a job hunt tracker Space that mirrors a job search pipeline: counts for applied, seen, skipped, and voided roles, recruiter and connection outreach, digests, and open questions awaiting the searcher. Use when the user (or someone they are supporting) is running an active job search and wants a status board over it.",
+    "category": "muse",
+    "path": "skills/job-hunt-tracker-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/job-hunt-tracker-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "job-search-strategist",
     "description": "Build a targeted job search system with pipeline tracking, outreach scripts, and weekly operating cadence.",
     "category": "career",
@@ -3875,6 +3902,15 @@
     "category": "creative-design",
     "path": "skills/logo-designer",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/logo-designer",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
+    "name": "lookbook-space",
+    "description": "Build a lookbook Space over your wardrobe inventory: what you own, organized for outfit planning and gap-spotting, refreshed daily from the wardrobe records. Use when the user keeps a wardrobe inventory and wants a visual lookbook Space over it.",
+    "category": "muse",
+    "path": "skills/lookbook-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/lookbook-space",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
@@ -6318,6 +6354,15 @@
     "license": "MIT"
   },
   {
+    "name": "saved-reels-catalog-space",
+    "description": "Build a saved reels catalog Space: a searchable visual catalog of your saved short-form videos, grouped by what each one actually contains and labeled with its topic and collection, with links back to the originals. Use when the user's saved videos have become an unsearchable pile and they want them organized.",
+    "category": "muse",
+    "path": "skills/saved-reels-catalog-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/saved-reels-catalog-space",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "scala-pro",
     "description": "Idiomatic Scala: functional-OO blend, case classes, pattern matching, effect systems, and build tooling. Use when writing, reviewing, or structuring Scala applications.",
     "category": "development",
@@ -7376,6 +7421,15 @@
     "category": "enterprise-communication",
     "path": "skills/translation-pro",
     "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/translation-pro",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
+    "name": "transportation-space",
+    "description": "Build a transportation Space: a daily snapshot of measured travel times from home to your saved destinations, plus a next-trip snapshot from your calendar. Use when the user wants travel times to their regular places visible at a glance, without a live routing engine.",
+    "category": "muse",
+    "path": "skills/transportation-space",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/transportation-space",
     "author": "awesome-muse-skills",
     "license": "MIT"
   },
