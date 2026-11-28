@@ -4374,6 +4374,15 @@
     "license": "MIT"
   },
   {
+    "name": "muse-wechat-ilink",
+    "description": "Connect Muse itself to WeChat over Tencent's official iLink protocol, with QR login, owner binding, hook driver, proactive pushes and watchdog. Use when the user asks to connect Muse to WeChat, receive Muse reminders on WeChat, or fix a WeChat bridge that stopped replying or pushing.",
+    "category": "enterprise-communication",
+    "path": "skills/muse-wechat-ilink",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/muse-wechat-ilink",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "mysql-pro",
     "description": "MySQL and MariaDB expertise — InnoDB tuning, replication, and query patterns — use when building on or fixing MySQL.",
     "category": "database",
