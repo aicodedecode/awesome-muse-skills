@@ -6732,6 +6732,15 @@
     "license": "MIT"
   },
   {
+    "name": "social-following-cleanup",
+    "description": "Safely prune a social account's following list (Instagram, TikTok, and similar platforms) down to the accounts that matter, without ever unfollowing a real person. Use when the user wants to clean up, purge, or reduce who they follow, unfollow inactive or irrelevant accounts, run a recurring following cleanup, audit past unfollows, or re-follow people who were removed by mistake.",
+    "category": "general",
+    "path": "skills/social-following-cleanup",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/social-following-cleanup",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "social-media-designer",
     "description": "Design scroll-stopping social content with platform specs, hooks, carousels, and brand consistency.",
     "category": "creative-design",
