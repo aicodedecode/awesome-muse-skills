@@ -4950,6 +4950,15 @@
     "license": "MIT"
   },
   {
+    "name": "payment-band-and-canary-guards",
+    "description": "Two guards against an agent's quiet failures: (1) a payment band check — before executing any payment, compare the amount to that payee's own history (flag above +25% of the median of the last 6 comparable payments, stop over an absolute cap, and treat 'not enough history' as no clearance, never a pass); (2) a canary registry — every job or feed that normally reports 'nothing changed' registers a canary it must always be able to show, and a checker fails the run when the canary is stale. Use when setting up agent-executed payments, audits of recurring charges, or any scheduled job whose normal output is zero.",
+    "category": "workflow-automation",
+    "path": "skills/payment-band-and-canary-guards",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/payment-band-and-canary-guards",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "pcr-optimization",
     "description": "PCR assay optimization and troubleshooting — primer design, cycling conditions, and fixing failed reactions.",
     "category": "scientific",
