@@ -5040,6 +5040,15 @@
     "license": "MIT"
   },
   {
+    "name": "personal-project-manager",
+    "description": "Run a person's goals, projects, and requests the project-management way, translated for a personal assistant: classify every effort as portfolio, program, project, or operations; charter it in one structured record; decompose, estimate honestly, track earned value, keep a risk register, control changes to settled plans, and close with a benefit sustain check. Use whenever a request is a project, a goal needs managing across sessions, or a plan needs a schedule with real dependencies, not for one-off lookups.",
+    "category": "productivity",
+    "path": "skills/personal-project-manager",
+    "github_url": "https://github.com/aicodedecode/awesome-muse-skills/tree/main/skills/personal-project-manager",
+    "author": "awesome-muse-skills",
+    "license": "MIT"
+  },
+  {
     "name": "personal-research-assistant",
     "description": "Research anything well with an AI assistant: frame balanced questions, compare options in tables, demand sources with dates, and spot weak claims. Use when comparing products, checking news, or deciding on health, travel, or tech topics.",
     "category": "everyday-assistant",
