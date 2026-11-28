@@ -1,0 +1,13 @@
+# Charter record for this project. Keep current; dashboards compile from records.
+level: project            # portfolio | program | project | operations
+outcome: ""
+benefit: ""
+benefit_owner: ""
+done_evidence: ""
+deadline_or_constraints: ""
+stakeholders: []
+status: active            # active | blocked | closing | closed | sustaining
+budget_category: ""
+risks: []                 # each: {risk, trigger, owner, response}
+sustain: {}               # {days: 30 or 90, due: YYYY-MM-DD} once closed with a persisting benefit
+estimates: []             # each: {item, low, likely, high, actual, unit}
